@@ -11,14 +11,14 @@
 <meta name="keywords" content="habit tracker, pomodoro timer, focus timer, streak tracker, mood tracker, productivity app, daily habits, free habit app, PWA habit tracker">
 <meta name="author" content="Momentum">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://strong-cannoli-dfff79.netlify.app/">
+<link rel="canonical" href="https://teo-momentum-pwapp.netlify.app/">
 
 <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://strong-cannoli-dfff79.netlify.app/">
+<meta property="og:url" content="https://teo-momentum-pwapp.netlify.app/">
 <meta property="og:title" content="Momentum — Free Habit Tracker & Pomodoro Focus Timer">
 <meta property="og:description" content="Build lasting habits, focus deeply, and track your mood. Free habit tracker with Pomodoro timer, streaks, achievements, and mood log. No account needed.">
-<meta property="og:image" content="https://strong-cannoli-dfff79.netlify.app/og-image.png">
+<meta property="og:image" content="https://teo-momentum-pwapp.netlify.app/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="Momentum">
@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Momentum — Free Habit Tracker & Pomodoro Focus Timer">
 <meta name="twitter:description" content="Build lasting habits & focus deeply. Free habit tracker with Pomodoro timer, streaks, and mood log. No account needed.">
-<meta name="twitter:image" content="https://strong-cannoli-dfff79.netlify.app/og-image.png">
+<meta name="twitter:image" content="https://teo-momentum-pwapp.netlify.app/og-image.png">
 
 <!-- PWA -->
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -44,7 +44,7 @@
   "@type": "WebApplication",
   "name": "Momentum",
   "description": "Build lasting habits, focus deeply with a Pomodoro timer, and track your mood. Free habit tracker with streaks, achievements, and mood log.",
-  "url": "https://strong-cannoli-dfff79.netlify.app/",
+  "url": "https://teo-momentum-pwapp.netlify.app/",
   "applicationCategory": "LifestyleApplication",
   "operatingSystem": "Any",
   "browserRequirements": "Requires a modern web browser",
@@ -62,7 +62,7 @@
     "Works offline",
     "No account required"
   ],
-  "screenshot": "https://strong-cannoli-dfff79.netlify.app/og-image.png"
+  "screenshot": "https://teo-momentum-pwapp.netlify.app/og-image.png"
 }
 </script>
 
@@ -1813,7 +1813,7 @@ function shareStreak() {
   const streak = S.habits.length ? Math.max(...S.habits.map(h => h.streak || 0), 0) : 0;
   const done = S.habits.filter(h => (S.completions[new Date().toDateString()] || []).includes(h.id)).length;
   const total = S.habits.length;
-  const appUrl = 'https://strong-cannoli-dfff79.netlify.app';
+  const appUrl = 'https://teo-momentum-pwapp.netlify.app';
   let text;
   if (streak >= 7) {
     text = `🔥 ${streak}-day streak and counting! Building better habits one day at a time with Momentum 💪\n\nTry it free — no account needed: ${appUrl}`;
