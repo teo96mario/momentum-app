@@ -35,6 +35,23 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Is Momentum really free?","acceptedAnswer":{"@type":"Answer","text":"Yes — completely. The core habit tracker, Pomodoro timer, mood journal, streaks, achievements, and data export are all free forever. There is a Pro tier in development for advanced analytics and cloud sync, but the app is fully functional without it."}},
+    {"@type":"Question","name":"Do I need to create an account?","acceptedAnswer":{"@type":"Answer","text":"No. Momentum stores all your data in your browser's local storage. There's no sign-up, no email, no password. Just open the app and start. The trade-off is that your data stays on your current device unless you export it."}},
+    {"@type":"Question","name":"What is a Pomodoro timer?","acceptedAnswer":{"@type":"Answer","text":"The Pomodoro Technique is a time management method developed by Francesco Cirillo in the 1980s. You work in focused 25-minute intervals (called Pomodoros), then take a 5-minute break. After four Pomodoros, you take a longer 15–30 minute break. Studies consistently show this reduces mental fatigue and improves focus."}},
+    {"@type":"Question","name":"Does Momentum work on iPhone and Android?","acceptedAnswer":{"@type":"Answer","text":"Yes. Momentum is a Progressive Web App (PWA), which means it runs in any modern browser on any device — iOS, Android, Mac, Windows, or Linux. On mobile, you can add it to your home screen from the browser menu to use it like a native app, including offline."}},
+    {"@type":"Question","name":"Can I use Momentum without internet?","acceptedAnswer":{"@type":"Answer","text":"Yes. After your first visit, Momentum's service worker caches all assets. You can track habits, run the Pomodoro timer, and log your mood completely offline. Your data syncs locally so nothing is lost between sessions."}},
+    {"@type":"Question","name":"How do I install Momentum on my phone?","acceptedAnswer":{"@type":"Answer","text":"On Android (Chrome): look for the 'Add to Home Screen' banner or tap the three-dot menu and choose Install App. On iPhone (Safari): tap the Share button, then Add to Home Screen. The app will then open like any native app, without a browser bar."}},
+    {"@type":"Question","name":"How many habits can I track?","acceptedAnswer":{"@type":"Answer","text":"As many as you want — there's no artificial limit. Research suggests focusing on 3–5 habits at a time for the best results, but Momentum won't stop you from tracking more."}},
+    {"@type":"Question","name":"What happens to my data if I clear my browser?","acceptedAnswer":{"@type":"Answer","text":"Clearing browser data or localStorage will erase your habits and history. To protect against this, use the Export Data button in Settings to download a CSV backup anytime."}},
+    {"@type":"Question","name":"Is the source code available?","acceptedAnswer":{"@type":"Answer","text":"Yes — Momentum is open source. You can view, fork, or contribute at https://github.com/teo96mario/momentum-app."}}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "Momentum",
   "description": "Free habit tracker app with Pomodoro timer, streak tracking, mood log, and achievements. No account needed. Works offline.",
@@ -323,7 +340,7 @@
 <!-- NAV -->
 <nav>
   <div class="logo"><span>⚡</span> Momentum</div>
-  <a href="/" class="nav-cta">Open App →</a>
+  <a href="/?utm_source=landing&utm_medium=nav&utm_campaign=organic" class="nav-cta">Open App →</a>
 </nav>
 
 <!-- HERO -->
@@ -332,7 +349,7 @@
   <h1>The Free Habit Tracker That Actually Sticks</h1>
   <p class="hero-sub">Build lasting habits, focus deeply with a Pomodoro timer, and track your mood — all in one place. No sign-up. No ads. No nonsense.</p>
   <div class="hero-btns">
-    <a href="/" class="btn-primary">⚡ Start Building Habits</a>
+    <a href="/?utm_source=landing&utm_medium=hero_cta&utm_campaign=organic" class="btn-primary">⚡ Start Building Habits</a>
     <a href="#features" class="btn-ghost">See what's inside →</a>
   </div>
   <div class="hero-pills">
@@ -544,30 +561,51 @@
   </div>
 </section>
 
+<!-- PRO WAITLIST -->
+<section id="waitlist" style="max-width:var(--max);margin:0 auto;padding:0 24px 60px">
+  <div style="background:var(--bg2);border:1px solid var(--border);border-radius:20px;padding:40px 32px;text-align:center">
+    <div class="section-label" style="margin-bottom:10px">Coming soon</div>
+    <h2 style="margin-bottom:10px;font-size:clamp(20px,3vw,28px)">Get early access to Momentum Pro</h2>
+    <p style="color:var(--text2);font-size:15px;max-width:480px;margin:0 auto 28px;line-height:1.7">Pro adds cloud sync, cross-device data, advanced streaks analytics, and custom reminder schedules. Join the waitlist — no spam, just a single email when it's ready.</p>
+    <form name="pro-waitlist-landing" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="display:flex;gap:10px;max-width:420px;margin:0 auto;flex-wrap:wrap;justify-content:center">
+      <input type="hidden" name="form-name" value="pro-waitlist-landing">
+      <input name="bot-field" style="display:none" tabindex="-1" aria-hidden="true">
+      <input type="email" name="email" required placeholder="your@email.com" style="flex:1;min-width:200px;padding:12px 16px;border-radius:100px;border:1px solid var(--border);background:rgba(255,255,255,0.06);color:var(--text);font-size:15px;outline:none">
+      <button type="submit" style="background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border:none;padding:12px 24px;border-radius:100px;font-weight:700;font-size:15px;cursor:pointer;white-space:nowrap">Join Waitlist</button>
+    </form>
+    <p style="color:var(--text2);font-size:12px;margin-top:14px">No spam. Unsubscribe anytime.</p>
+  </div>
+</section>
+
 <!-- CTA BANNER -->
 <div class="cta-banner">
   <h2>Start your streak today — it's free</h2>
   <p>No sign-up. No credit card. No nonsense. Just open the app and add your first habit in under a minute.</p>
-  <a href="/" class="btn-primary">⚡ Open Momentum Free</a>
+  <a href="/?utm_source=landing&utm_medium=bottom_cta&utm_campaign=organic" class="btn-primary">⚡ Open Momentum Free</a>
 </div>
 
 <!-- FOOTER -->
 <footer>
   <p style="margin-bottom:8px">
-    <a href="/">Open App</a> &nbsp;·&nbsp;
+    <a href="/?utm_source=landing&utm_medium=footer&utm_campaign=organic">Open App</a> &nbsp;·&nbsp;
     <a href="https://github.com/teo96mario/momentum-app">GitHub</a> &nbsp;·&nbsp;
-    <a href="/#settings">Settings</a>
+    <a href="#waitlist">Join Waitlist</a> &nbsp;·&nbsp;
+    <a href="#faq">FAQ</a>
   </p>
   <p>© 2026 Momentum · Free habit tracker PWA · No account needed · Works offline</p>
 </footer>
 
 <script>
-  // Track landing page CTA clicks
-  function gtag(){if(window.dataLayer)window.dataLayer.push(arguments);}
-  document.querySelectorAll('a[href="/"]').forEach(a => {
+  // Track landing page CTA clicks + waitlist form
+  document.querySelectorAll('a[href*="utm_medium"]').forEach(a => {
     a.addEventListener('click', () => {
-      if (typeof gtag === 'function') gtag('event', 'landing_cta_click', { location: a.closest('nav') ? 'nav' : a.closest('.cta-banner') ? 'cta_banner' : 'hero' });
+      const medium = new URL(a.href).searchParams.get('utm_medium');
+      if (typeof gtag === 'function') gtag('event', 'landing_cta_click', { cta_location: medium });
     });
+  });
+  const form = document.querySelector('form[name="pro-waitlist-landing"]');
+  if (form) form.addEventListener('submit', () => {
+    if (typeof gtag === 'function') gtag('event', 'waitlist_signup', { source: 'landing_page' });
   });
 </script>
 </body>
