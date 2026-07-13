@@ -1,0 +1,29 @@
+{
+  "name": "Momentum — Habit & Focus Tracker",
+  "short_name": "Momentum",
+  "description": "Build habits that stick. Track your streaks, focus deeply, and feel great.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d0d14",
+  "theme_color": "#7c5cfc",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["productivity", "health", "lifestyle"],
+  "shortcuts": [
+    { "name": "My Habits", "url": "/?tab=habits", "description": "Check off today's habits" },
+    { "name": "Focus Timer", "url": "/?tab=focus", "description": "Start a focus session" }
+  ]
+}
