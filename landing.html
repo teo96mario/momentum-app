@@ -27,589 +27,605 @@
 <!-- GA4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9TJT1EXGD2"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-9TJT1EXGD2');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-9TJT1EXGD2');
 </script>
 
 <!-- JSON-LD -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type":"Question","name":"Is Momentum really free?","acceptedAnswer":{"@type":"Answer","text":"Yes — completely. The core habit tracker, Pomodoro timer, mood journal, streaks, achievements, and data export are all free forever. There is a Pro tier in development for advanced analytics and cloud sync, but the app is fully functional without it."}},
-    {"@type":"Question","name":"Do I need to create an account?","acceptedAnswer":{"@type":"Answer","text":"No. Momentum stores all your data in your browser's local storage. There's no sign-up, no email, no password. Just open the app and start. The trade-off is that your data stays on your current device unless you export it."}},
-    {"@type":"Question","name":"What is a Pomodoro timer?","acceptedAnswer":{"@type":"Answer","text":"The Pomodoro Technique is a time management method developed by Francesco Cirillo in the 1980s. You work in focused 25-minute intervals (called Pomodoros), then take a 5-minute break. After four Pomodoros, you take a longer 15–30 minute break. Studies consistently show this reduces mental fatigue and improves focus."}},
-    {"@type":"Question","name":"Does Momentum work on iPhone and Android?","acceptedAnswer":{"@type":"Answer","text":"Yes. Momentum is a Progressive Web App (PWA), which means it runs in any modern browser on any device — iOS, Android, Mac, Windows, or Linux. On mobile, you can add it to your home screen from the browser menu to use it like a native app, including offline."}},
-    {"@type":"Question","name":"Can I use Momentum without internet?","acceptedAnswer":{"@type":"Answer","text":"Yes. After your first visit, Momentum's service worker caches all assets. You can track habits, run the Pomodoro timer, and log your mood completely offline. Your data syncs locally so nothing is lost between sessions."}},
-    {"@type":"Question","name":"How do I install Momentum on my phone?","acceptedAnswer":{"@type":"Answer","text":"On Android (Chrome): look for the 'Add to Home Screen' banner or tap the three-dot menu and choose Install App. On iPhone (Safari): tap the Share button, then Add to Home Screen. The app will then open like any native app, without a browser bar."}},
-    {"@type":"Question","name":"How many habits can I track?","acceptedAnswer":{"@type":"Answer","text":"As many as you want — there's no artificial limit. Research suggests focusing on 3–5 habits at a time for the best results, but Momentum won't stop you from tracking more."}},
-    {"@type":"Question","name":"What happens to my data if I clear my browser?","acceptedAnswer":{"@type":"Answer","text":"Clearing browser data or localStorage will erase your habits and history. To protect against this, use the Export Data button in Settings to download a CSV backup anytime."}},
-    {"@type":"Question","name":"Is the source code available?","acceptedAnswer":{"@type":"Answer","text":"Yes — Momentum is open source. You can view, fork, or contribute at https://github.com/teo96mario/momentum-app."}}
-  ]
+"@context": "https://schema.org",
+"@type": "FAQPage",
+"mainEntity": [
+{"@type":"Question","name":"Is Momentum really free?","acceptedAnswer":{"@type":"Answer","text":"Yes — completely. The core habit tracker, Pomodoro timer, mood journal, streaks, achievements, and data export are all free forever. There is a Pro tier in development for advanced analytics and cloud sync, but the app is fully functional without it."}},
+{"@type":"Question","name":"Do I need to create an account?","acceptedAnswer":{"@type":"Answer","text":"No. Momentum stores all your data in your browser's local storage. There's no sign-up, no email, no password. Just open the app and start. The trade-off is that your data stays on your current device unless you export it."}},
+{"@type":"Question","name":"What is a Pomodoro timer?","acceptedAnswer":{"@type":"Answer","text":"The Pomodoro Technique is a time management method developed by Francesco Cirillo in the 1980s. You work in focused 25-minute intervals (called Pomodoros), then take a 5-minute break. After four Pomodoros, you take a longer 15–30 minute break. Studies consistently show this reduces mental fatigue and improves focus."}},
+{"@type":"Question","name":"Does Momentum work on iPhone and Android?","acceptedAnswer":{"@type":"Answer","text":"Yes. Momentum is a Progressive Web App (PWA), which means it runs in any modern browser on any device — iOS, Android, Mac, Windows, or Linux. On mobile, you can add it to your home screen from the browser menu to use it like a native app, including offline."}},
+{"@type":"Question","name":"Can I use Momentum without internet?","acceptedAnswer":{"@type":"Answer","text":"Yes. After your first visit, Momentum's service worker caches all assets. You can track habits, run the Pomodoro timer, and log your mood completely offline. Your data syncs locally so nothing is lost between sessions."}},
+{"@type":"Question","name":"How do I install Momentum on my phone?","acceptedAnswer":{"@type":"Answer","text":"On Android (Chrome): look for the 'Add to Home Screen' banner or tap the three-dot menu and choose Install App. On iPhone (Safari): tap the Share button, then Add to Home Screen. The app will then open like any native app, without a browser bar."}},
+{"@type":"Question","name":"How many habits can I track?","acceptedAnswer":{"@type":"Answer","text":"As many as you want — there's no artificial limit. Research suggests focusing on 3–5 habits at a time for the best results, but Momentum won't stop you from tracking more."}},
+{"@type":"Question","name":"What happens to my data if I clear my browser?","acceptedAnswer":{"@type":"Answer","text":"Clearing browser data or localStorage will erase your habits and history. To protect against this, use the Export Data button in Settings to download a CSV backup anytime."}},
+{"@type":"Question","name":"Is the source code available?","acceptedAnswer":{"@type":"Answer","text":"Yes — Momentum is open source. You can view, fork, or contribute at https://github.com/teo96mario/momentum-app."}}
+]
 }
 </script>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Momentum",
-  "description": "Free habit tracker app with Pomodoro timer, streak tracking, mood log, and achievements. No account needed. Works offline.",
-  "url": "https://teo-momentum-pwapp.netlify.app/",
-  "applicationCategory": "LifestyleApplication",
-  "operatingSystem": "Any (Web, iOS, Android via PWA)",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  },
-  "featureList": [
-    "Habit tracking with streaks",
-    "Pomodoro focus timer",
-    "Mood journal",
-    "Achievements and milestones",
-    "Works offline",
-    "No account required",
-    "Installable PWA"
-  ]
+"@context": "https://schema.org",
+"@type": "SoftwareApplication",
+"name": "Momentum",
+"description": "Free habit tracker app with Pomodoro timer, streak tracking, mood log, and achievements. No account needed. Works offline.",
+"url": "https://teo-momentum-pwapp.netlify.app/",
+"applicationCategory": "LifestyleApplication",
+"operatingSystem": "Any (Web, iOS, Android via PWA)",
+"offers": {
+"@type": "Offer",
+"price": "0",
+"priceCurrency": "USD"
+},
+"featureList": [
+"Habit tracking with streaks",
+"Pomodoro focus timer",
+"Mood journal",
+"Achievements and milestones",
+"Works offline",
+"No account required",
+"Installable PWA"
+]
+}
+</script>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "HowTo",
+"name": "How to start building habits with Momentum",
+"description": "Get started with the Momentum habit tracker in under 10 seconds — no account required.",
+"totalTime": "PT1M",
+"step": [
+{"@type":"HowToStep","position":1,"name":"Open the app — no account needed","text":"Click the link and you're in. No sign-up form, no email verification, no onboarding wizard. Your habits are stored locally on your device.","url":"https://teo-momentum-pwapp.netlify.app/landing.html#how-it-works"},
+{"@type":"HowToStep","position":2,"name":"Add the habits you want to build","text":"Pick from dozens of icons or use your own. Add as many habits as you like — there's no artificial paywall blocking habit count.","url":"https://teo-momentum-pwapp.netlify.app/landing.html#how-it-works"},
+{"@type":"HowToStep","position":3,"name":"Check them off each day","text":"Tap a habit to mark it done. Watch your streak grow. A confetti burst fires when you complete everything for the day.","url":"https://teo-momentum-pwapp.netlify.app/landing.html#how-it-works"},
+{"@type":"HowToStep","position":4,"name":"Focus deeply with the Pomodoro timer","text":"Switch to the Focus tab and start a 25-minute work session. When the timer ends, take a break and repeat.","url":"https://teo-momentum-pwapp.netlify.app/landing.html#how-it-works"},
+{"@type":"HowToStep","position":5,"name":"Install on your phone (optional)","text":"Tap Install when prompted and Momentum becomes a home screen app. Opens instantly, works offline — your data travels with your device.","url":"https://teo-momentum-pwapp.netlify.app/landing.html#how-it-works"}
+]
 }
 </script>
 
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  :root {
-    --accent: #7c5cfc;
-    --accent2: #fc5c7d;
-    --green: #43e97b;
-    --bg: #0f0f13;
-    --bg2: #1a1a24;
-    --text: #f0eeff;
-    --text2: #9a94b8;
-    --border: rgba(255,255,255,0.08);
-    --radius: 16px;
-    --max: 780px;
-  }
+:root {
+--accent: #7c5cfc;
+--accent2: #fc5c7d;
+--green: #43e97b;
+--bg: #0f0f13;
+--bg2: #1a1a24;
+--text: #f0eeff;
+--text2: #9a94b8;
+--border: rgba(255,255,255,0.08);
+--radius: 16px;
+--max: 780px;
+}
 
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
-    font-size: 16px;
-  }
+body {
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+background: var(--bg);
+color: var(--text);
+line-height: 1.6;
+font-size: 16px;
+}
 
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
 
-  /* ── NAV ── */
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: var(--max);
-    margin: 0 auto;
-    padding: 20px 24px;
-  }
-  .logo { font-weight: 800; font-size: 20px; display: flex; align-items: center; gap: 8px; }
-  .logo span { font-size: 22px; }
-  .nav-cta {
-    background: var(--accent);
-    color: #fff;
-    padding: 8px 20px;
-    border-radius: 100px;
-    font-weight: 600;
-    font-size: 14px;
-    white-space: nowrap;
-  }
-  .nav-cta:hover { text-decoration: none; opacity: 0.9; }
+/* ── NAV ── */
+nav {
+display: flex;
+align-items: center;
+justify-content: space-between;
+max-width: var(--max);
+margin: 0 auto;
+padding: 20px 24px;
+}
+.logo { font-weight: 800; font-size: 20px; display: flex; align-items: center; gap: 8px; }
+.logo span { font-size: 22px; }
+.nav-cta {
+background: var(--accent);
+color: #fff;
+padding: 8px 20px;
+border-radius: 100px;
+font-weight: 600;
+font-size: 14px;
+white-space: nowrap;
+}
+.nav-cta:hover { text-decoration: none; opacity: 0.9; }
 
-  /* ── HERO ── */
-  .hero {
-    text-align: center;
-    padding: 60px 24px 80px;
-    max-width: var(--max);
-    margin: 0 auto;
-  }
-  .badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    background: rgba(124,92,252,0.15);
-    border: 1px solid rgba(124,92,252,0.3);
-    border-radius: 100px;
-    padding: 5px 14px;
-    font-size: 13px;
-    color: #a78bfa;
-    font-weight: 500;
-    margin-bottom: 28px;
-  }
-  h1 {
-    font-size: clamp(32px, 6vw, 52px);
-    font-weight: 900;
-    line-height: 1.1;
-    letter-spacing: -1.5px;
-    margin-bottom: 20px;
-    background: linear-gradient(135deg, #f0eeff 0%, #a78bfa 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-  .hero-sub {
-    font-size: 18px;
-    color: var(--text2);
-    max-width: 560px;
-    margin: 0 auto 36px;
-    line-height: 1.7;
-  }
-  .hero-btns {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 48px;
-  }
-  .btn-primary {
-    background: linear-gradient(135deg, var(--accent), var(--accent2));
-    color: #fff;
-    padding: 14px 32px;
-    border-radius: 100px;
-    font-weight: 700;
-    font-size: 16px;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    transition: opacity 0.15s;
-  }
-  .btn-primary:hover { text-decoration: none; opacity: 0.9; }
-  .btn-ghost {
-    background: rgba(255,255,255,0.06);
-    color: var(--text2);
-    padding: 14px 28px;
-    border-radius: 100px;
-    font-weight: 600;
-    font-size: 15px;
-    border: 1px solid var(--border);
-  }
-  .btn-ghost:hover { text-decoration: none; background: rgba(255,255,255,0.1); }
+/* ── HERO ── */
+.hero {
+text-align: center;
+padding: 60px 24px 80px;
+max-width: var(--max);
+margin: 0 auto;
+}
+.badge {
+display: inline-flex;
+align-items: center;
+gap: 6px;
+background: rgba(124,92,252,0.15);
+border: 1px solid rgba(124,92,252,0.3);
+border-radius: 100px;
+padding: 5px 14px;
+font-size: 13px;
+color: #a78bfa;
+font-weight: 500;
+margin-bottom: 28px;
+}
+h1 {
+font-size: clamp(32px, 6vw, 52px);
+font-weight: 900;
+line-height: 1.1;
+letter-spacing: -1.5px;
+margin-bottom: 20px;
+background: linear-gradient(135deg, #f0eeff 0%, #a78bfa 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+.hero-sub {
+font-size: 18px;
+color: var(--text2);
+max-width: 560px;
+margin: 0 auto 36px;
+line-height: 1.7;
+}
+.hero-btns {
+display: flex;
+gap: 12px;
+justify-content: center;
+flex-wrap: wrap;
+margin-bottom: 48px;
+}
+.btn-primary {
+background: linear-gradient(135deg, var(--accent), var(--accent2));
+color: #fff;
+padding: 14px 32px;
+border-radius: 100px;
+font-weight: 700;
+font-size: 16px;
+display: inline-flex;
+align-items: center;
+gap: 8px;
+transition: opacity 0.15s;
+}
+.btn-primary:hover { text-decoration: none; opacity: 0.9; }
+.btn-ghost {
+background: rgba(255,255,255,0.06);
+color: var(--text2);
+padding: 14px 28px;
+border-radius: 100px;
+font-weight: 600;
+font-size: 15px;
+border: 1px solid var(--border);
+}
+.btn-ghost:hover { text-decoration: none; background: rgba(255,255,255,0.1); }
 
-  .hero-pills {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .pill {
-    background: var(--bg2);
-    border: 1px solid var(--border);
-    border-radius: 100px;
-    padding: 6px 14px;
-    font-size: 13px;
-    color: var(--text2);
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-  .pill-icon { font-size: 14px; }
+.hero-pills {
+display: flex;
+gap: 10px;
+justify-content: center;
+flex-wrap: wrap;
+}
+.pill {
+background: var(--bg2);
+border: 1px solid var(--border);
+border-radius: 100px;
+padding: 6px 14px;
+font-size: 13px;
+color: var(--text2);
+display: flex;
+align-items: center;
+gap: 6px;
+}
+.pill-icon { font-size: 14px; }
 
-  /* ── SECTION ── */
-  section { max-width: var(--max); margin: 0 auto; padding: 60px 24px; }
-  .section-label {
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 12px;
-  }
-  h2 {
-    font-size: clamp(24px, 4vw, 36px);
-    font-weight: 800;
-    letter-spacing: -0.5px;
-    margin-bottom: 16px;
-  }
-  .section-sub {
-    color: var(--text2);
-    font-size: 16px;
-    max-width: 560px;
-    margin-bottom: 40px;
-    line-height: 1.7;
-  }
+/* ── SECTION ── */
+section { max-width: var(--max); margin: 0 auto; padding: 60px 24px; }
+.section-label {
+font-size: 12px;
+font-weight: 700;
+letter-spacing: 1.5px;
+text-transform: uppercase;
+color: var(--accent);
+margin-bottom: 12px;
+}
+h2 {
+font-size: clamp(24px, 4vw, 36px);
+font-weight: 800;
+letter-spacing: -0.5px;
+margin-bottom: 16px;
+}
+.section-sub {
+color: var(--text2);
+font-size: 16px;
+max-width: 560px;
+margin-bottom: 40px;
+line-height: 1.7;
+}
 
-  /* ── FEATURES GRID ── */
-  .features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 16px;
-  }
-  .feature-card {
-    background: var(--bg2);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 24px;
-  }
-  .feature-icon { font-size: 28px; margin-bottom: 12px; }
-  .feature-title { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
-  .feature-desc { font-size: 13px; color: var(--text2); line-height: 1.6; }
+/* ── FEATURES GRID ── */
+.features-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 16px;
+}
+.feature-card {
+background: var(--bg2);
+border: 1px solid var(--border);
+border-radius: var(--radius);
+padding: 24px;
+}
+.feature-icon { font-size: 28px; margin-bottom: 12px; }
+.feature-title { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+.feature-desc { font-size: 13px; color: var(--text2); line-height: 1.6; }
 
-  /* ── HOW IT WORKS ── */
-  .steps { display: flex; flex-direction: column; gap: 24px; }
-  .step { display: flex; gap: 20px; align-items: flex-start; }
-  .step-num {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--accent), var(--accent2));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    font-size: 15px;
-    flex-shrink: 0;
-    color: #fff;
-  }
-  .step-body h3 { font-size: 17px; font-weight: 700; margin-bottom: 4px; }
-  .step-body p { font-size: 14px; color: var(--text2); line-height: 1.6; }
+/* ── HOW IT WORKS ── */
+.steps { display: flex; flex-direction: column; gap: 24px; }
+.step { display: flex; gap: 20px; align-items: flex-start; }
+.step-num {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+background: linear-gradient(135deg, var(--accent), var(--accent2));
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 800;
+font-size: 15px;
+flex-shrink: 0;
+color: #fff;
+}
+.step-body h3 { font-size: 17px; font-weight: 700; margin-bottom: 4px; }
+.step-body p { font-size: 14px; color: var(--text2); line-height: 1.6; }
 
-  /* ── COMPARISON TABLE ── */
-  .compare-table {
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    overflow: hidden;
-  }
-  .compare-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    border-bottom: 1px solid var(--border);
-  }
-  .compare-row:last-child { border-bottom: none; }
-  .compare-cell {
-    padding: 14px 16px;
-    font-size: 14px;
-  }
-  .compare-cell:first-child { color: var(--text2); }
-  .compare-row.header .compare-cell {
-    font-weight: 700;
-    font-size: 13px;
-    background: rgba(124,92,252,0.06);
-    color: var(--text);
-  }
-  .compare-row.header .compare-cell:nth-child(2) { color: var(--accent); }
-  .check { color: var(--green); font-weight: 700; }
-  .cross { color: #ff6b6b; }
+/* ── COMPARISON TABLE ── */
+.compare-table {
+border: 1px solid var(--border);
+border-radius: var(--radius);
+overflow: hidden;
+}
+.compare-row {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+border-bottom: 1px solid var(--border);
+}
+.compare-row:last-child { border-bottom: none; }
+.compare-cell {
+padding: 14px 16px;
+font-size: 14px;
+}
+.compare-cell:first-child { color: var(--text2); }
+.compare-row.header .compare-cell {
+font-weight: 700;
+font-size: 13px;
+background: rgba(124,92,252,0.06);
+color: var(--text);
+}
+.compare-row.header .compare-cell:nth-child(2) { color: var(--accent); }
+.check { color: var(--green); font-weight: 700; }
+.cross { color: #ff6b6b; }
 
-  /* ── FAQ ── */
-  .faq-list { display: flex; flex-direction: column; gap: 0; }
-  .faq-item {
-    border-bottom: 1px solid var(--border);
-    padding: 20px 0;
-  }
-  .faq-q { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
-  .faq-a { font-size: 14px; color: var(--text2); line-height: 1.7; }
+/* ── FAQ ── */
+.faq-list { display: flex; flex-direction: column; gap: 0; }
+.faq-item {
+border-bottom: 1px solid var(--border);
+padding: 20px 0;
+}
+.faq-q { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+.faq-a { font-size: 14px; color: var(--text2); line-height: 1.7; }
 
-  /* ── CTA BANNER ── */
-  .cta-banner {
-    background: linear-gradient(135deg, rgba(124,92,252,0.2), rgba(252,92,125,0.15));
-    border: 1px solid rgba(124,92,252,0.3);
-    border-radius: 20px;
-    text-align: center;
-    padding: 52px 24px;
-    margin: 0 24px 80px;
-    max-width: calc(var(--max) - 48px);
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .cta-banner h2 { margin-bottom: 12px; font-size: clamp(22px, 4vw, 32px); }
-  .cta-banner p { color: var(--text2); margin-bottom: 28px; font-size: 16px; }
+/* ── CTA BANNER ── */
+.cta-banner {
+background: linear-gradient(135deg, rgba(124,92,252,0.2), rgba(252,92,125,0.15));
+border: 1px solid rgba(124,92,252,0.3);
+border-radius: 20px;
+text-align: center;
+padding: 52px 24px;
+margin: 0 24px 80px;
+max-width: calc(var(--max) - 48px);
+margin-left: auto;
+margin-right: auto;
+}
+.cta-banner h2 { margin-bottom: 12px; font-size: clamp(22px, 4vw, 32px); }
+.cta-banner p { color: var(--text2); margin-bottom: 28px; font-size: 16px; }
 
-  /* ── FOOTER ── */
-  footer {
-    text-align: center;
-    padding: 24px;
-    border-top: 1px solid var(--border);
-    font-size: 13px;
-    color: var(--text2);
-  }
+/* ── FOOTER ── */
+footer {
+text-align: center;
+padding: 24px;
+border-top: 1px solid var(--border);
+font-size: 13px;
+color: var(--text2);
+}
 
-  /* ── DIVIDER ── */
-  hr { border: none; border-top: 1px solid var(--border); }
+/* ── DIVIDER ── */
+hr { border: none; border-top: 1px solid var(--border); }
 </style>
 </head>
 <body>
 
 <!-- NAV -->
 <nav>
-  <div class="logo"><span>⚡</span> Momentum</div>
-  <a href="/?utm_source=landing&utm_medium=nav&utm_campaign=organic" class="nav-cta">Open App →</a>
+<div class="logo"><span>⚡</span> Momentum</div>
+<a href="/?utm_source=landing&utm_medium=nav&utm_campaign=organic" class="nav-cta">Open App →</a>
 </nav>
 
 <!-- HERO -->
 <div class="hero">
-  <div class="badge">✨ 100% Free &nbsp;·&nbsp; No account &nbsp;·&nbsp; Works offline</div>
-  <h1>The Free Habit Tracker That Actually Sticks</h1>
-  <p class="hero-sub">Build lasting habits, focus deeply with a Pomodoro timer, and track your mood — all in one place. No sign-up. No ads. No nonsense.</p>
-  <div class="hero-btns">
-    <a href="/?utm_source=landing&utm_medium=hero_cta&utm_campaign=organic" class="btn-primary">⚡ Start Building Habits</a>
-    <a href="#features" class="btn-ghost">See what's inside →</a>
-  </div>
-  <div class="hero-pills">
-    <span class="pill"><span class="pill-icon">🔥</span> Streak tracking</span>
-    <span class="pill"><span class="pill-icon">🍅</span> Pomodoro timer</span>
-    <span class="pill"><span class="pill-icon">😊</span> Mood journal</span>
-    <span class="pill"><span class="pill-icon">🏆</span> Achievements</span>
-    <span class="pill"><span class="pill-icon">📱</span> Install as app</span>
-    <span class="pill"><span class="pill-icon">✈️</span> Works offline</span>
-  </div>
+<div class="badge">✨ 100% Free &nbsp;·&nbsp; No account &nbsp;·&nbsp; Works offline</div>
+<h1>The Free Habit Tracker That Actually Sticks</h1>
+<p class="hero-sub">Build lasting habits, focus deeply with a Pomodoro timer, and track your mood — all in one place. No sign-up. No ads. No nonsense.</p>
+<div class="hero-btns">
+<a href="/?utm_source=landing&utm_medium=hero_cta&utm_campaign=organic" class="btn-primary">⚡ Start Building Habits</a>
+<a href="#features" class="btn-ghost">See what's inside →</a>
+</div>
+<div class="hero-pills">
+<span class="pill"><span class="pill-icon">🔥</span> Streak tracking</span>
+<span class="pill"><span class="pill-icon">🍅</span> Pomodoro timer</span>
+<span class="pill"><span class="pill-icon">😊</span> Mood journal</span>
+<span class="pill"><span class="pill-icon">🏆</span> Achievements</span>
+<span class="pill"><span class="pill-icon">📱</span> Install as app</span>
+<span class="pill"><span class="pill-icon">✈️</span> Works offline</span>
+</div>
 </div>
 
 <hr>
 
 <!-- FEATURES -->
 <section id="features">
-  <div class="section-label">Features</div>
-  <h2>Everything you need to build better habits</h2>
-  <p class="section-sub">Momentum packs the tools that actually help you build and sustain a routine — without the complexity of enterprise apps or the cost of subscription services.</p>
-  <div class="features-grid">
-    <div class="feature-card">
-      <div class="feature-icon">🔥</div>
-      <div class="feature-title">Habit Streaks</div>
-      <div class="feature-desc">Track daily habits with visual streaks. A 7-day history heat map shows your consistency at a glance.</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">🍅</div>
-      <div class="feature-title">Pomodoro Focus Timer</div>
-      <div class="feature-desc">Built-in Pomodoro timer with 25-min focus sessions and short/long break modes. Session dots track your daily deep-work sessions.</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">😊</div>
-      <div class="feature-title">Mood Journal</div>
-      <div class="feature-desc">Log how you're feeling each day with an emoji picker and optional notes. Spot patterns between mood and habit completion.</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">🏆</div>
-      <div class="feature-title">Achievements</div>
-      <div class="feature-desc">Unlock badges as you hit milestones: 7-day streaks, perfect days, focus sessions, and more. Gamification that works.</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">📊</div>
-      <div class="feature-title">Progress Dashboard</div>
-      <div class="feature-desc">See your completion rate, total sessions, and longest streak all in one place. Export your data anytime as CSV.</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">📱</div>
-      <div class="feature-title">Install as an App</div>
-      <div class="feature-desc">Add Momentum to your home screen like a native app — no app store required. Built as a Progressive Web App (PWA).</div>
-    </div>
-  </div>
+<div class="section-label">Features</div>
+<h2>Everything you need to build better habits</h2>
+<p class="section-sub">Momentum packs the tools that actually help you build and sustain a routine — without the complexity of enterprise apps or the cost of subscription services.</p>
+<div class="features-grid">
+<div class="feature-card">
+<div class="feature-icon">🔥</div>
+<div class="feature-title">Habit Streaks</div>
+<div class="feature-desc">Track daily habits with visual streaks. A 7-day history heat map shows your consistency at a glance.</div>
+</div>
+<div class="feature-card">
+<div class="feature-icon">🍅</div>
+<div class="feature-title">Pomodoro Focus Timer</div>
+<div class="feature-desc">Built-in Pomodoro timer with 25-min focus sessions and short/long break modes. Session dots track your daily deep-work sessions.</div>
+</div>
+<div class="feature-card">
+<div class="feature-icon">😊</div>
+<div class="feature-title">Mood Journal</div>
+<div class="feature-desc">Log how you're feeling each day with an emoji picker and optional notes. Spot patterns between mood and habit completion.</div>
+</div>
+<div class="feature-card">
+<div class="feature-icon">🏆</div>
+<div class="feature-title">Achievements</div>
+<div class="feature-desc">Unlock badges as you hit milestones: 7-day streaks, perfect days, focus sessions, and more. Gamification that works.</div>
+</div>
+<div class="feature-card">
+<div class="feature-icon">📊</div>
+<div class="feature-title">Progress Dashboard</div>
+<div class="feature-desc">See your completion rate, total sessions, and longest streak all in one place. Export your data anytime as CSV.</div>
+</div>
+<div class="feature-card">
+<div class="feature-icon">📱</div>
+<div class="feature-title">Install as an App</div>
+<div class="feature-desc">Add Momentum to your home screen like a native app — no app store required. Built as a Progressive Web App (PWA).</div>
+</div>
+</div>
 </section>
 
 <hr>
 
 <!-- HOW IT WORKS -->
 <section id="how-it-works">
-  <div class="section-label">How it works</div>
-  <h2>Zero friction. Start in 10 seconds.</h2>
-  <p class="section-sub">Most habit trackers make you create an account, verify your email, and set up a profile before you can track anything. Momentum doesn't.</p>
-  <div class="steps">
-    <div class="step">
-      <div class="step-num">1</div>
-      <div class="step-body">
-        <h3>Open the app — no account needed</h3>
-        <p>Click the link and you're in. No sign-up form, no email verification, no onboarding wizard. Your habits are stored locally on your device.</p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="step-num">2</div>
-      <div class="step-body">
-        <h3>Add the habits you want to build</h3>
-        <p>Pick from dozens of icons or use your own. Add as many habits as you like — there's no artificial paywall blocking habit count.</p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="step-num">3</div>
-      <div class="step-body">
-        <h3>Check them off each day</h3>
-        <p>Tap a habit to mark it done. Watch your streak grow. A confetti burst fires when you complete everything for the day.</p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="step-num">4</div>
-      <div class="step-body">
-        <h3>Focus deeply with the Pomodoro timer</h3>
-        <p>Switch to the Focus tab and start a 25-minute work session. When the timer ends, take a break and repeat. It's the most battle-tested productivity technique for a reason.</p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="step-num">5</div>
-      <div class="step-body">
-        <h3>Install on your phone (optional)</h3>
-        <p>Tap "Install" when prompted and Momentum becomes a home screen app. Opens instantly, works offline — your data travels with your device.</p>
-      </div>
-    </div>
-  </div>
+<div class="section-label">How it works</div>
+<h2>Zero friction. Start in 10 seconds.</h2>
+<p class="section-sub">Most habit trackers make you create an account, verify your email, and set up a profile before you can track anything. Momentum doesn't.</p>
+<div class="steps">
+<div class="step">
+<div class="step-num">1</div>
+<div class="step-body">
+<h3>Open the app — no account needed</h3>
+<p>Click the link and you're in. No sign-up form, no email verification, no onboarding wizard. Your habits are stored locally on your device.</p>
+</div>
+</div>
+<div class="step">
+<div class="step-num">2</div>
+<div class="step-body">
+<h3>Add the habits you want to build</h3>
+<p>Pick from dozens of icons or use your own. Add as many habits as you like — there's no artificial paywall blocking habit count.</p>
+</div>
+</div>
+<div class="step">
+<div class="step-num">3</div>
+<div class="step-body">
+<h3>Check them off each day</h3>
+<p>Tap a habit to mark it done. Watch your streak grow. A confetti burst fires when you complete everything for the day.</p>
+</div>
+</div>
+<div class="step">
+<div class="step-num">4</div>
+<div class="step-body">
+<h3>Focus deeply with the Pomodoro timer</h3>
+<p>Switch to the Focus tab and start a 25-minute work session. When the timer ends, take a break and repeat. It's the most battle-tested productivity technique for a reason.</p>
+</div>
+</div>
+<div class="step">
+<div class="step-num">5</div>
+<div class="step-body">
+<h3>Install on your phone (optional)</h3>
+<p>Tap "Install" when prompted and Momentum becomes a home screen app. Opens instantly, works offline — your data travels with your device.</p>
+</div>
+</div>
+</div>
 </section>
 
 <hr>
 
 <!-- COMPARISON TABLE -->
 <section id="compare">
-  <div class="section-label">Comparison</div>
-  <h2>Why choose Momentum?</h2>
-  <p class="section-sub">Other free habit trackers lock features behind paywalls, require accounts, or serve you ads. Momentum doesn't do any of that.</p>
-  <div class="compare-table">
-    <div class="compare-row header">
-      <div class="compare-cell">Feature</div>
-      <div class="compare-cell">⚡ Momentum</div>
-      <div class="compare-cell">Typical free app</div>
-    </div>
-    <div class="compare-row">
-      <div class="compare-cell">Completely free</div>
-      <div class="compare-cell"><span class="check">✓ Always</span></div>
-      <div class="compare-cell"><span class="cross">✗ Limited</span></div>
-    </div>
-    <div class="compare-row">
-      <div class="compare-cell">No account required</div>
-      <div class="compare-cell"><span class="check">✓ Yes</span></div>
-      <div class="compare-cell"><span class="cross">✗ Sign-up required</span></div>
-    </div>
-    <div class="compare-row">
-      <div class="compare-cell">Works offline</div>
-      <div class="compare-cell"><span class="check">✓ Yes</span></div>
-      <div class="compare-cell"><span class="cross">✗ Internet needed</span></div>
-    </div>
-    <div class="compare-row">
-      <div class="compare-cell">Unlimited habits</div>
-      <div class="compare-cell"><span class="check">✓ Yes</span></div>
-      <div class="compare-cell"><span class="cross">✗ 3–5 limit (free)</span></div>
-    </div>
-    <div class="compare-row">
-      <div class="compare-cell">Built-in Pomodoro timer</div>
-      <div class="compare-cell"><span class="check">✓ Yes</span></div>
-      <div class="compare-cell"><span class="cross">✗ Separate app</span></div>
-    </div>
-    <div class="compare-row">
-      <div class="compare-cell">No ads</div>
-      <div class="compare-cell"><span class="check">✓ Zero ads</span></div>
-      <div class="compare-cell"><span class="cross">✗ Ad-supported</span></div>
-    </div>
-    <div class="compare-row">
-      <div class="compare-cell">Install as PWA</div>
-      <div class="compare-cell"><span class="check">✓ Yes</span></div>
-      <div class="compare-cell"><span class="cross">✗ App store only</span></div>
-    </div>
-    <div class="compare-row">
-      <div class="compare-cell">Data export</div>
-      <div class="compare-cell"><span class="check">✓ CSV anytime</span></div>
-      <div class="compare-cell"><span class="cross">✗ Premium feature</span></div>
-    </div>
-  </div>
+<div class="section-label">Comparison</div>
+<h2>Why choose Momentum?</h2>
+<p class="section-sub">Other free habit trackers lock features behind paywalls, require accounts, or serve you ads. Momentum doesn't do any of that.</p>
+<div class="compare-table">
+<div class="compare-row header">
+<div class="compare-cell">Feature</div>
+<div class="compare-cell">⚡ Momentum</div>
+<div class="compare-cell">Typical free app</div>
+</div>
+<div class="compare-row">
+<div class="compare-cell">Completely free</div>
+<div class="compare-cell"><span class="check">✓ Always</span></div>
+<div class="compare-cell"><span class="cross">✗ Limited</span></div>
+</div>
+<div class="compare-row">
+<div class="compare-cell">No account required</div>
+<div class="compare-cell"><span class="check">✓ Yes</span></div>
+<div class="compare-cell"><span class="cross">✗ Sign-up required</span></div>
+</div>
+<div class="compare-row">
+<div class="compare-cell">Works offline</div>
+<div class="compare-cell"><span class="check">✓ Yes</span></div>
+<div class="compare-cell"><span class="cross">✗ Internet needed</span></div>
+</div>
+<div class="compare-row">
+<div class="compare-cell">Unlimited habits</div>
+<div class="compare-cell"><span class="check">✓ Yes</span></div>
+<div class="compare-cell"><span class="cross">✗ 3–5 limit (free)</span></div>
+</div>
+<div class="compare-row">
+<div class="compare-cell">Built-in Pomodoro timer</div>
+<div class="compare-cell"><span class="check">✓ Yes</span></div>
+<div class="compare-cell"><span class="cross">✗ Separate app</span></div>
+</div>
+<div class="compare-row">
+<div class="compare-cell">No ads</div>
+<div class="compare-cell"><span class="check">✓ Zero ads</span></div>
+<div class="compare-cell"><span class="cross">✗ Ad-supported</span></div>
+</div>
+<div class="compare-row">
+<div class="compare-cell">Install as PWA</div>
+<div class="compare-cell"><span class="check">✓ Yes</span></div>
+<div class="compare-cell"><span class="cross">✗ App store only</span></div>
+</div>
+<div class="compare-row">
+<div class="compare-cell">Data export</div>
+<div class="compare-cell"><span class="check">✓ CSV anytime</span></div>
+<div class="compare-cell"><span class="cross">✗ Premium feature</span></div>
+</div>
+</div>
 </section>
 
 <hr>
 
 <!-- FAQ -->
 <section id="faq">
-  <div class="section-label">FAQ</div>
-  <h2>Frequently asked questions</h2>
-  <div class="faq-list">
+<div class="section-label">FAQ</div>
+<h2>Frequently asked questions</h2>
+<div class="faq-list">
 
-    <div class="faq-item">
-      <div class="faq-q">Is Momentum really free?</div>
-      <div class="faq-a">Yes — completely. The core habit tracker, Pomodoro timer, mood journal, streaks, achievements, and data export are all free forever. There is a Pro tier in development for advanced analytics and cloud sync, but the app is fully functional without it.</div>
-    </div>
+<div class="faq-item">
+<div class="faq-q">Is Momentum really free?</div>
+<div class="faq-a">Yes — completely. The core habit tracker, Pomodoro timer, mood journal, streaks, achievements, and data export are all free forever. There is a Pro tier in development for advanced analytics and cloud sync, but the app is fully functional without it.</div>
+</div>
 
-    <div class="faq-item">
-      <div class="faq-q">Do I need to create an account?</div>
-      <div class="faq-a">No. Momentum stores all your data in your browser's local storage. There's no sign-up, no email, no password. Just open the app and start. The trade-off is that your data stays on your current device unless you export it.</div>
-    </div>
+<div class="faq-item">
+<div class="faq-q">Do I need to create an account?</div>
+<div class="faq-a">No. Momentum stores all your data in your browser's local storage. There's no sign-up, no email, no password. Just open the app and start. The trade-off is that your data stays on your current device unless you export it.</div>
+</div>
 
-    <div class="faq-item">
-      <div class="faq-q">What is a Pomodoro timer?</div>
-      <div class="faq-a">The Pomodoro Technique is a time management method developed by Francesco Cirillo in the 1980s. You work in focused 25-minute intervals (called "Pomodoros"), then take a 5-minute break. After four Pomodoros, you take a longer 15–30 minute break. Studies consistently show this reduces mental fatigue and improves focus.</div>
-    </div>
+<div class="faq-item">
+<div class="faq-q">What is a Pomodoro timer?</div>
+<div class="faq-a">The Pomodoro Technique is a time management method developed by Francesco Cirillo in the 1980s. You work in focused 25-minute intervals (called "Pomodoros"), then take a 5-minute break. After four Pomodoros, you take a longer 15–30 minute break. Studies consistently show this reduces mental fatigue and improves focus.</div>
+</div>
 
-    <div class="faq-item">
-      <div class="faq-q">Does Momentum work on iPhone and Android?</div>
-      <div class="faq-a">Yes. Momentum is a Progressive Web App (PWA), which means it runs in any modern browser on any device — iOS, Android, Mac, Windows, or Linux. On mobile, you can add it to your home screen from the browser menu to use it like a native app, including offline.</div>
-    </div>
+<div class="faq-item">
+<div class="faq-q">Does Momentum work on iPhone and Android?</div>
+<div class="faq-a">Yes. Momentum is a Progressive Web App (PWA), which means it runs in any modern browser on any device — iOS, Android, Mac, Windows, or Linux. On mobile, you can add it to your home screen from the browser menu to use it like a native app, including offline.</div>
+</div>
 
-    <div class="faq-item">
-      <div class="faq-q">Can I use Momentum without internet?</div>
-      <div class="faq-a">Yes. After your first visit, Momentum's service worker caches all assets. You can track habits, run the Pomodoro timer, and log your mood completely offline. Your data syncs locally so nothing is lost between sessions.</div>
-    </div>
+<div class="faq-item">
+<div class="faq-q">Can I use Momentum without internet?</div>
+<div class="faq-a">Yes. After your first visit, Momentum's service worker caches all assets. You can track habits, run the Pomodoro timer, and log your mood completely offline. Your data syncs locally so nothing is lost between sessions.</div>
+</div>
 
-    <div class="faq-item">
-      <div class="faq-q">How do I install Momentum on my phone?</div>
-      <div class="faq-a">On Android (Chrome): look for the "Add to Home Screen" banner or tap the three-dot menu → "Install App". On iPhone (Safari): tap the Share button → "Add to Home Screen". The app will then open like any native app, without a browser bar.</div>
-    </div>
+<div class="faq-item">
+<div class="faq-q">How do I install Momentum on my phone?</div>
+<div class="faq-a">On Android (Chrome): look for the "Add to Home Screen" banner or tap the three-dot menu → "Install App". On iPhone (Safari): tap the Share button → "Add to Home Screen". The app will then open like any native app, without a browser bar.</div>
+</div>
 
-    <div class="faq-item">
-      <div class="faq-q">How many habits can I track?</div>
-      <div class="faq-a">As many as you want — there's no artificial limit. Research suggests focusing on 3–5 habits at a time for the best results, but Momentum won't stop you from tracking more.</div>
-    </div>
+<div class="faq-item">
+<div class="faq-q">How many habits can I track?</div>
+<div class="faq-a">As many as you want — there's no artificial limit. Research suggests focusing on 3–5 habits at a time for the best results, but Momentum won't stop you from tracking more.</div>
+</div>
 
-    <div class="faq-item">
-      <div class="faq-q">What happens to my data if I clear my browser?</div>
-      <div class="faq-a">Clearing browser data or localStorage will erase your habits and history. To protect against this, use the Export Data button in Settings to download a CSV backup anytime. We're working on optional cloud sync for Pro users.</div>
-    </div>
+<div class="faq-item">
+<div class="faq-q">What happens to my data if I clear my browser?</div>
+<div class="faq-a">Clearing browser data or localStorage will erase your habits and history. To protect against this, use the Export Data button in Settings to download a CSV backup anytime. We're working on optional cloud sync for Pro users.</div>
+</div>
 
-    <div class="faq-item">
-      <div class="faq-q">Is the source code available?</div>
-      <div class="faq-a">Yes — Momentum is open source. You can view, fork, or contribute at <a href="https://github.com/teo96mario/momentum-app">github.com/teo96mario/momentum-app</a>.</div>
-    </div>
+<div class="faq-item">
+<div class="faq-q">Is the source code available?</div>
+<div class="faq-a">Yes — Momentum is open source. You can view, fork, or contribute at <a href="https://github.com/teo96mario/momentum-app">github.com/teo96mario/momentum-app</a>.</div>
+</div>
 
-  </div>
+</div>
 </section>
 
 <!-- PRO WAITLIST -->
 <section id="waitlist" style="max-width:var(--max);margin:0 auto;padding:0 24px 60px">
-  <div style="background:var(--bg2);border:1px solid var(--border);border-radius:20px;padding:40px 32px;text-align:center">
-    <div class="section-label" style="margin-bottom:10px">Coming soon</div>
-    <h2 style="margin-bottom:10px;font-size:clamp(20px,3vw,28px)">Get early access to Momentum Pro</h2>
-    <p style="color:var(--text2);font-size:15px;max-width:480px;margin:0 auto 28px;line-height:1.7">Pro adds cloud sync, cross-device data, advanced streaks analytics, and custom reminder schedules. Join the waitlist — no spam, just a single email when it's ready.</p>
-    <form name="pro-waitlist-landing" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="display:flex;gap:10px;max-width:420px;margin:0 auto;flex-wrap:wrap;justify-content:center">
-      <input type="hidden" name="form-name" value="pro-waitlist-landing">
-      <input name="bot-field" style="display:none" tabindex="-1" aria-hidden="true">
-      <input type="email" name="email" required placeholder="your@email.com" style="flex:1;min-width:200px;padding:12px 16px;border-radius:100px;border:1px solid var(--border);background:rgba(255,255,255,0.06);color:var(--text);font-size:15px;outline:none">
-      <button type="submit" style="background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border:none;padding:12px 24px;border-radius:100px;font-weight:700;font-size:15px;cursor:pointer;white-space:nowrap">Join Waitlist</button>
-    </form>
-    <p style="color:var(--text2);font-size:12px;margin-top:14px">No spam. Unsubscribe anytime.</p>
-  </div>
+<div style="background:var(--bg2);border:1px solid var(--border);border-radius:20px;padding:40px 32px;text-align:center">
+<div class="section-label" style="margin-bottom:10px">Coming soon</div>
+<h2 style="margin-bottom:10px;font-size:clamp(20px,3vw,28px)">Get early access to Momentum Pro</h2>
+<p style="color:var(--text2);font-size:15px;max-width:480px;margin:0 auto 28px;line-height:1.7">Pro adds cloud sync, cross-device data, advanced streaks analytics, and custom reminder schedules. Join the waitlist — no spam, just a single email when it's ready.</p>
+<form name="pro-waitlist-landing" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="display:flex;gap:10px;max-width:420px;margin:0 auto;flex-wrap:wrap;justify-content:center">
+<input type="hidden" name="form-name" value="pro-waitlist-landing">
+<input name="bot-field" style="display:none" tabindex="-1" aria-hidden="true">
+<input type="email" name="email" required placeholder="your@email.com" style="flex:1;min-width:200px;padding:12px 16px;border-radius:100px;border:1px solid var(--border);background:rgba(255,255,255,0.06);color:var(--text);font-size:15px;outline:none">
+<button type="submit" style="background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border:none;padding:12px 24px;border-radius:100px;font-weight:700;font-size:15px;cursor:pointer;white-space:nowrap">Join Waitlist</button>
+</form>
+<p style="color:var(--text2);font-size:12px;margin-top:14px">No spam. Unsubscribe anytime.</p>
+</div>
 </section>
 
 <!-- CTA BANNER -->
 <div class="cta-banner">
-  <h2>Start your streak today — it's free</h2>
-  <p>No sign-up. No credit card. No nonsense. Just open the app and add your first habit in under a minute.</p>
-  <a href="/?utm_source=landing&utm_medium=bottom_cta&utm_campaign=organic" class="btn-primary">⚡ Open Momentum Free</a>
+<h2>Start your streak today — it's free</h2>
+<p>No sign-up. No credit card. No nonsense. Just open the app and add your first habit in under a minute.</p>
+<a href="/?utm_source=landing&utm_medium=bottom_cta&utm_campaign=organic" class="btn-primary">⚡ Open Momentum Free</a>
 </div>
 
 <!-- FOOTER -->
 <footer>
-  <p style="margin-bottom:8px">
-    <a href="/?utm_source=landing&utm_medium=footer&utm_campaign=organic">Open App</a> &nbsp;·&nbsp;
-    <a href="https://github.com/teo96mario/momentum-app">GitHub</a> &nbsp;·&nbsp;
-    <a href="#waitlist">Join Waitlist</a> &nbsp;·&nbsp;
-    <a href="#faq">FAQ</a> &nbsp;·&nbsp;
-    <a href="/privacy.html">Privacy</a>
-  </p>
-  <p>© 2026 Momentum · Free habit tracker PWA · No account needed · Works offline</p>
+<p style="margin-bottom:8px">
+<a href="/?utm_source=landing&utm_medium=footer&utm_campaign=organic">Open App</a> &nbsp;·&nbsp;
+<a href="https://github.com/teo96mario/momentum-app">GitHub</a> &nbsp;·&nbsp;
+<a href="#waitlist">Join Waitlist</a> &nbsp;·&nbsp;
+<a href="#faq">FAQ</a> &nbsp;·&nbsp;
+<a href="/privacy.html">Privacy</a>
+</p>
+<p>© 2026 Momentum · Free habit tracker PWA · No account needed · Works offline</p>
 </footer>
 
 <script>
-  // Track landing page CTA clicks + waitlist form
-  document.querySelectorAll('a[href*="utm_medium"]').forEach(a => {
-    a.addEventListener('click', () => {
-      const medium = new URL(a.href).searchParams.get('utm_medium');
-      if (typeof gtag === 'function') gtag('event', 'landing_cta_click', { cta_location: medium });
-    });
-  });
-  const form = document.querySelector('form[name="pro-waitlist-landing"]');
-  if (form) form.addEventListener('submit', () => {
-    if (typeof gtag === 'function') gtag('event', 'waitlist_signup', { source: 'landing_page' });
-  });
+// Track landing page CTA clicks + waitlist form
+document.querySelectorAll('a[href*="utm_medium"]').forEach(a => {
+a.addEventListener('click', () => {
+const medium = new URL(a.href).searchParams.get('utm_medium');
+if (typeof gtag === 'function') gtag('event', 'landing_cta_click', { cta_location: medium });
+});
+});
+const form = document.querySelector('form[name="pro-waitlist-landing"]');
+if (form) form.addEventListener('submit', () => {
+if (typeof gtag === 'function') gtag('event', 'waitlist_signup', { source: 'landing_page' });
+});
 </script>
 </body>
 </html>
